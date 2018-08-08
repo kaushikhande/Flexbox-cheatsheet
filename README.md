@@ -6,4 +6,5 @@ __Task List__
 - [x] flex and order
 - [x] flex-basis / width
 - [x] flex-wrap: wrap;
-- [x] justify-content: space-around; 
+- [x] justify-content: space-around;
+- [x] flex-start and flex-end 

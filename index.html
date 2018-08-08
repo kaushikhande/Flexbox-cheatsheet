@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flexbox cheatsheet</title>
+</head>
+<style type="text/css">
+	
+	.container-1, .container-2{
+		display: flex;
+	}
+	/*
+	.container-2{
+		display: flex;
+	}
+	*/
+	.container-1 div, .container-2 div{
+		border: 1px #ccc solid;	
+		padding: 10px;
+
+	}
+	/*
+	.container-2 div{
+		border: 1px #ccc solid;	
+		padding: 10px;
+
+	}
+	*/
+	body{
+		background-color: #f4f4f4;
+		color: #555;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 16px;
+
+	}
+	.container-1 .box-1{
+		flex: 1;
+		order: 2
+	}
+	.container-1 .box-2{
+		flex: 1;
+		order: 1;
+	}
+	.container-1 .box-3{
+		flex: 1;
+		order: 3;
+	}
+	.container-2{
+		/*
+		justify-content: center;
+		justify-content: flex-start;
+		justify-content: flex-end;
+		justify-content: space-between;
+		
+		justify-content:space-around;
+		*/
+		justify-content: space-between;
+		flex-wrap: wrap;
+		
+	}
+	.container-2-box{
+		flex-basis: 27%;
+
+	}
+
+</style>
+<body>
+	<div class="container-1">
+		<div class="box-1">
+			<h1>Box - 1</h1>
+			<p>1Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+		</div>
+		<div class="box-2">
+			<h1>Box - 2</h1>
+			<p>2Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+		</div>
+		<div class="box-3">
+			<h1>Box - 3</h1>
+			<p>3Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+		</div>
+	</div>
+
+	<div class="container-2">
+		<div class="container-2-box">
+			<h1>Box - 1</h1>
+			<p>1Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+		</div>
+		<div class="container-2-box">
+			<h1>Box - 2</h1>
+			<p>2Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+		</div>
+		<div class="container-2-box">
+			<h1>Box - 3</h1>
+			<p>3Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+		</div>
+	</div>
+</body>
+</html>
